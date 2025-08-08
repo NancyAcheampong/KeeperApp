@@ -1,9 +1,9 @@
 
-function Note() {
+function Note(props) {
     return (
         <div className="note">
-            <h1>This is the title content</h1>
-            <p>This is a note content</p>
+            <h1 className="title">{props.title}</h1>
+            <p className="content">{props.content}</p>
         </div>
     )
 }
